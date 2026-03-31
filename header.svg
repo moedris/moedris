@@ -1,0 +1,57 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="200" fill="url(#bgGrad)" />
+  <path d="M0,140 C150,100 300,170 450,140 C600,110 750,170 900,140 L900,200 L0,200 Z" fill="#1c3a5e" opacity="0.6"/>
+  <path d="M0,155 C120,125 250,175 400,150 C550,125 700,168 900,148 L900,200 L0,200 Z" fill="#1c3a5e" opacity="0.4"/>
+  <path d="M0,168 C180,148 350,178 500,162 C650,146 780,172 900,160 L900,200 L0,200 Z" fill="#1c3a5e" opacity="0.8"/>
+  <text
+    x="450" y="105"
+    font-family="'Courier New', Courier, monospace"
+    font-size="62"
+    font-weight="700"
+    fill="#58A6FF"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    filter="url(#glow)"
+    opacity="0.5"
+  >m0crafts</text>
+  <text
+    x="450" y="105"
+    font-family="'Courier New', Courier, monospace"
+    font-size="62"
+    font-weight="700"
+    fill="#58A6FF"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    filter="url(#softglow)"
+  >m0crafts</text>
+  <text
+    x="450" y="148"
+    font-family="'Courier New', Courier, monospace"
+    font-size="14"
+    font-weight="400"
+    fill="#8b949e"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >Full-Stack Engineer  ·  Go  ·  TypeScript  ·  React</text>
+</svg>
